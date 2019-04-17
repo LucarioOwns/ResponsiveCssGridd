@@ -1,0 +1,394 @@
+:root {
+    --primary-color: #c72727;
+    --secondary-color: #f99500;
+    --light-color: #f3f3f3;
+    --dark-color: #333;
+    --max-width: 1100px;
+}
+
+.category {
+    --sports-color: #f99500;
+    --ent-color: #a66bbe;
+    --tech-color: #009cff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.5;
+    background: var(--light-color);
+    list-style-type: none;
+}
+
+#side-nav {
+    background: #f99500;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+}
+
+.content {
+    display: grid;
+    grid-gap: 10px;
+    max-width: 100%;
+    grid-template: repeat(2, 1fr) / repeat(6, 1fr);
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(8, 1fr) / repeat(2, 2fr);
+}
+
+.pic {
+    display: flex;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    margin-left: 10px;
+    border: solid 5px rgb(221, 213, 213, 0.3);
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.icons {
+    display: flex;
+    padding: 1rem;
+}
+
+.icon {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    ;
+}
+
+.icon .fas {
+    color: black;
+}
+
+.fas {
+    display: flex;
+    padding-top: 40px;
+    align-items: center;
+    padding-bottom: 10px;
+    color: #f99500;
+}
+
+.fas h2 {
+    margin-left: 20px;
+    font-size: 30px;
+    color: black;
+}
+
+hr {
+    height: 2px;
+    color: #f99500;
+    background-color: #f99500;
+    border: none;
+    margin-left: 66px;
+}
+
+.side-bar {
+    display: flex;
+    background-color: #333;
+    /* background-color: transparent; */
+    color: white;
+    font-weight: 300;
+    font-size: 1.25em;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 0;
+    justify-content: space-evenly;
+}
+
+.about-me {
+    /* text-align: center; */
+    align-content: center;
+    letter-spacing: 0;
+    flex: 1;
+    margin-top: 45px;
+    margin-left: 20px;
+    padding-right: 15px;
+}
+
+.about-me {
+    display: flex;
+    align-items: start;
+}
+
+.my-info {
+    list-style: none;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.no-style {
+    list-style: none;
+}
+
+.side-1 {
+    list-style: none;
+}
+
+.side-2 {
+    list-style: none;
+}
+
+
+/* .side-2 .no-style li {
+    padding-bottom: 7px;
+} */
+
+.grid-container-2 .side-1 li {
+    list-style: disc;
+    margin-top: 45px;
+    /* margin-bottom: 20px; */
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #f99500;
+}
+
+.grid-container-2 .side-1 li span {
+    color: black;
+}
+
+.resume-edu .grid-container-2 .side-1 p {
+    margin-left: 20px;
+}
+
+.resume-edu {
+    margin-left: 66px;
+}
+
+/* ===================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Staatliches", cursive;
+    margin-bottom: 55.rem;
+    line-height: 1.3;
+    padding-bottom: 5px;
+}
+
+.header {
+    margin-left: 80px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    font-size: 80px;
+}
+
+/* Utility  FOR HEADER*/
+
+.container {
+    /* max-width: var(--max-width); */
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+    /* background-color: rgb(218,165,32); */
+    position: relative;
+}
+
+
+/* Heading Display */
+
+#top-header .header {
+    /* background-color: rgb(218,165,32); */
+    top: 0;
+}
+
+#top-header .container {
+    /* display: grid; */
+    padding: 1rem;
+    align-items: center;
+    /* margin-left: 20rem; */
+}
+
+#top-header h1 {
+    font-size: 3.5rem;
+}
+
+#top-header .underline {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+#top-header .underline::after {
+    content: '';
+    height: 2px;
+    width: 50px;
+    background: #f99500;
+    position: absolute;
+    left: 98px;
+    bottom: 32%;
+}
+
+#top-header .primary-text {
+    color: #f99500;
+}
+
+
+/* EDUCTION GRID SECTION */
+
+#resume-container .side-1 i {
+    margin: 5px;
+    color: #f99500;
+    font-size: .75rem;
+}
+
+#resume-container .side-1 p {
+    margin: 5px;
+    left: 1.5%;
+    font-size: .95rem;
+}
+
+.grid-container-1 {
+    /* background: #fff; */
+    padding: 1rem;
+}
+
+.grid-container-2 {
+    /* background: #fff; */
+    padding: 1rem;
+}
+
+.grid-container-3 {
+    /* background: #fff; */
+    padding: 1rem;
+}
+
+#resume-container .resume-edu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+#resume-container .resume-edu>*:first-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    grid-column: 1 / span 2;
+}
+
+#resume-container .resume-edu>*:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    grid-column: 1 / span 2;
+}
+
+#resume-container .resume-edu>*:nth-child(3) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    grid-column: 1 / span 2;
+}
+
+#resume-container .icons-main {
+    margin-left: 66px;
+}
+/* MEDIA QUERY's  */
+#side-nav {
+    grid-area: sidenav;
+}
+
+.pic {
+    grid-area: pic;
+}
+
+.container {
+    grid-area: container;
+}
+
+.header {
+    grid-area: header;
+}
+
+
+
+@media (max-width: 768px) {
+  body {
+       display: grid;
+       grid-template-columns: 1fr / span 2;
+       grid-template-areas: 
+        "header  header "
+        "sidenav sidenav"
+    
+
+    }
+    .my-info {
+        text-align: center;
+    }
+    .about-me {
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .container {
+        font-size: .90rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+  body {
+       display: grid;
+       grid-template-columns: 1fr / span 1;
+       grid-template-areas: 
+        "header"
+        "sidenav"
+    
+
+    }
+    .my-info {
+        text-align: center;
+    }
+    .about-me {
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .container {
+        font-size: .90rem;
+    }
+
+}
+
+
+
+/* COLORS scheme for my on guidance */
+
+#top-header .header {
+    background-color: rgb(180, 180, 180);
+
+}
+
+.container {
+    background-color: greenyellow;
+}
+
+.resume-edu .grid-container-1 {
+    background-color: #27b4c7;
+}
+
+.resume-edu .grid-container-2 {
+    background-color: purple;
+}
+
+.icons {
+    background-color: rgb(128, 0, 0);
+}
